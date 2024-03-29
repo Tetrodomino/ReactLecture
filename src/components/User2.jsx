@@ -10,17 +10,9 @@ export default function User(props) {
     const handleSubmit = (event) => {
         event.preventDefault(); // submit 버튼을 누르면 페이지가 바뀌는 것을 막음
         const user = users.find(val => val.id == form.id);
-        const newUsers = [];
         if (user)
         {
-            for (let val of users)
-            {
-                if (val.id == form.id)
-                    newUsers.push(form);
-                else    
-                    newUsers.push(val);
-            }
-            setUsers(newUsers)
+            setUsers(users.map(u => (u.id == form.id) ? form : u))
         }
         else
         {

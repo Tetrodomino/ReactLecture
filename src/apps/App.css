@@ -12,3 +12,8 @@ input, button {
 }
 
 td {padding: 5px;}
+
+.calc {
+  padding-left: 100px;
+  padding-top: 30px;
+}
