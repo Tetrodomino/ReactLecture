@@ -1,10 +1,13 @@
+
 .photo {
   width: 200px; height: 200px; border-radius: 100%;
 }
 
 .card {
-  width: 300px; text-align: center; padding: 10px;
-  background-color: #ebebeb; border-radius: 20px;
+  width: 350px; text-align: center; padding: 10px;
+  background-color: #f5d8d8; border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 50px;
 }
 
 input, button {
@@ -16,4 +19,22 @@ td {padding: 5px;}
 .calc {
   padding-left: 100px;
   padding-top: 30px;
+}
+
+.listmember {
+  display: flex;
+  justify-content: center;
+}
+
+.listtext {
+  display: flex;
+  justify-content: left;
+}
+
+#backgroundcard {
+  background-color: rgb(213, 240, 231);
+}
+
+.labeltop {
+  line-height: 30px;
 }

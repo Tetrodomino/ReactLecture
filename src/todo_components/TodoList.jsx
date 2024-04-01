@@ -1,9 +1,8 @@
 import '../apps/App.css';
 import { useEffect, useState } from 'react';
-
-import {v4 as uuidv4} from 'uuid';
 import AddTodo from './AddTodo';
 import Todo from './Todo';
+import {ListGroup} from 'react-bootstrap'
 
 
 export default function TodoList({filter}) { 
@@ -28,13 +27,13 @@ export default function TodoList({filter}) {
   
     return (
         <div>
-            <ul>
+            <ListGroup>
                 {
                     filteredTodos.map(todo => (
                         <Todo key={todo.id} todo={todo} onUpdate={handleUpdate} onDelete={handleDelete} />
                     ))
                 }
-            </ul> 
+            </ListGroup> 
             <AddTodo onAdd={handleAdd}/>        
         </div>
     );
