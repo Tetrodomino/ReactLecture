@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './apps/AppEx2_count';
 import reportWebVitals from './reportWebVitals';
+import BasicModal from './mui/BasicModal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div style={{marginTop:'40px', marginLeft:'20px', marginRight:'20px', backgroundColor:'#ebebeb'}}>
+      <BasicModal />
+    </div>
   </React.StrictMode>
 );
 
